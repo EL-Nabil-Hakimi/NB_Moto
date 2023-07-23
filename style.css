@@ -1,0 +1,408 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(bc.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+header{
+   z-index: 1;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(245, 118, 0);
+    padding: 15px 10px;
+    border-bottom: 2px rgb(0, 0, 0) solid;
+    
+}
+
+header h1{
+    color: rgba(0, 0, 0, 0.671);
+    font-size: 25px;    
+    cursor: pointer;
+}
+header h1 span{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+
+
+header #dv2{
+    display: flex;
+}
+
+header #dv2 input{
+    width: 200px;
+    padding: 10px 10px ;
+    margin-right: 5px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(233, 233, 233);
+    display: none;
+
+}
+
+
+ #iconcherche{
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    cursor: pointer;   
+    margin-right: 50px;
+ }
+
+ main{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+   
+ }
+#Section1{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 20px ;
+    background-color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 90px;
+}
+ #bcMain{
+    width: 90%;
+    height: 80%;
+
+ }
+
+
+ .Prdct{
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+ }
+
+ .Prdct article{
+    background-color: rgba(255, 255, 255);
+    opacity: 0.9;
+    width: 40%;
+    padding: 10px 2px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    box-shadow: 5px 5px 10px;
+    border-radius: 10px;
+
+ }
+ .Prdct article:hover{
+    opacity: 1;
+ }
+ .Prdct article img{
+    
+    
+    border-bottom: 1px rgb(245, 118, 0) solid;   
+    width: 78%;
+    height: 80%;
+    transition: 0.4s ease;
+    cursor: pointer;
+ }
+
+ .Prdct article img:hover{
+    
+    width: 80%;
+    height: 80%;
+ }
+
+ 
+ .Prdct article h2{
+    color: blue;
+    text-transform: uppercase;
+    font-size: 20px;
+    
+
+ }
+
+ 
+   
+ .Prdct ul{
+    list-style: none;
+    margin-left: 5px;
+    margin-right: 2px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    text-align: start;
+ }
+ .Prdct ul li{
+    font-size: larger;
+    color: black;
+
+ }
+
+
+ .btnShow{
+    margin-top: 10px;
+    text-align: center;
+   
+ }
+
+ .btnShow button{
+    
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color:rgb(245, 118, 0);
+    border-radius: 100px;
+ }
+
+ .btnShow button:hover {
+    background-color: rgb(255, 115, 0);
+
+    box-shadow: 5px 5px 10px black;
+
+
+ }
+
+ @media (max-width: 700px){
+ 
+ .Prdct article{
+   background-color: rgba(255, 255, 255);
+   opacity: 0.9;
+   width: 40%;
+   padding: 10px 2px;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   margin: 10px;
+   box-shadow: 5px 5px 10px;
+   border-radius: 10px;
+
+}
+.Prdct article:hover{
+   opacity: 1;
+}
+.Prdct article img{ 
+   
+   border-bottom: 1px rgb(245, 118, 0) solid;   
+   width: 78%;
+   height: 80%;
+   transition: 0.4s ease;
+   cursor: pointer;
+}
+
+.Prdct article img:hover{
+   
+   width: 80%;
+   height: 80%;
+}
+
+
+.Prdct article h2{
+   color: blue;
+   text-transform: uppercase;
+   font-size: 25px;
+   
+
+}
+
+
+  
+.Prdct ul{
+   list-style: none;
+   margin-left: 5px;
+   margin-right: 2px;
+   margin-top: 5px;
+   display: flex;
+   justify-content: start;
+   flex-direction: column;
+   text-align: start;
+}
+.Prdct ul li{
+   font-size: 10px;
+   color: black;
+
+}
+
+
+.btnShow{
+   margin-top: 10px;
+   text-align: center;
+  
+}
+
+.btnShow button{
+   
+   text-transform: uppercase;
+   padding: 10px 15px;
+   border: none;
+   color: rgb(255, 255, 255);
+   background-color:rgb(245, 118, 0);
+   border-radius: 100px;
+   font-size: 10px;
+}
+
+.btnShow button:hover {
+   background-color: rgb(255, 115, 0);
+
+   box-shadow: 5px 5px 10px black;
+
+
+}
+ 
+
+
+
+
+ }
+
+
+ @media (min-width: 1000px){
+   header #dv2 input{
+      display: block;
+      margin-right: 10px;
+      width: 700px;
+      height: 15 px;
+   }    
+   header h1{
+      color: rgba(0, 0, 0, 0.671);
+      font-size: 20px;    
+      cursor: pointer;
+   }
+   
+   #iconcherche{
+      width: 30px;
+      height: 30px;
+      margin-top: 8px;
+      cursor: pointer;   
+      margin-right: 50px;
+   }
+   header #dv2 input{
+      display: block;
+      margin-right: 10px;
+   }  
+  
+ .Prdct article{
+   background-color: rgba(255, 255, 255);
+   opacity: 0.9;
+   width: 30%;
+   padding: 10px 2px;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   margin: 10px;
+   box-shadow: 5px 5px 10px;
+   border-radius: 10px;
+
+}
+.Prdct article:hover{
+   opacity: 1;
+}
+.Prdct article img{ 
+   
+   border-bottom: 1px rgb(245, 118, 0) solid;   
+   width: 78%;
+   height: 80%;
+   transition: 0.4s ease;
+   cursor: pointer;
+}
+
+.Prdct article img:hover{
+   
+   width: 80%;
+   height: 80%;
+}
+
+
+.Prdct article h2{
+   color: blue;
+   text-transform: uppercase;
+   font-size: 25px;
+   
+
+}
+
+
+  
+.Prdct ul{
+   list-style: none;
+   margin-left: 5px;
+   margin-right: 2px;
+   margin-top: 5px;
+   display: flex;
+   justify-content: start;
+   flex-direction: column;
+   text-align: start;
+}
+.Prdct ul li{
+   font-size: 15px;
+   color: black;
+
+}
+
+
+.btnShow{
+   margin-top: 10px;
+   text-align: center;
+  
+}
+
+.btnShow button{
+   
+   text-transform: uppercase;
+   padding: 10px 20px;
+   border: none;
+   color: rgb(255, 255, 255);
+   background-color:rgb(245, 118, 0);
+   border-radius: 100px;
+   font-size: 13px;
+}
+
+.btnShow button:hover {
+   background-color: rgb(255, 115, 0);
+
+   box-shadow: 5px 5px 10px black;
+
+
+}
+ 
+#bcMain{
+   width: 80%;
+   height: 80%;
+
+}
+
+
+
+
+
+
+
+ }
